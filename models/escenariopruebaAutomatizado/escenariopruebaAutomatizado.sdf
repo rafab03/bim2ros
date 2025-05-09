@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <model name="escenariopruebaAutomatizado">
+        <static>false</static>
+        <link name="pared_link">
+            <pose>0 0 0 0 0 0</pose>
+            <gravity>false</gravity>
+            <self_collide>false</self_collide>
+            <visual name="pared_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenariopruebaAutomatizado/meshes/walls_slabs.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="pared_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenariopruebaAutomatizado/meshes/walls_slabs.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>100.0</mass>
+                <inertia>
+                    <ixx>10.0</ixx>
+                    <iyy>10.0</iyy>
+                    <izz>10.0</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <link name="0S0NG4owH0uBivEhLsmS3F_link">
+            <pose>3.99999976158142 2.02034997940063 1.97499990463257 0.0 -0.0 0.0</pose>
+            <visual name="0S0NG4owH0uBivEhLsmS3F_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenariopruebaAutomatizado/meshes/0S0NG4owH0uBivEhLsmS3F.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0S0NG4owH0uBivEhLsmS3F_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenariopruebaAutomatizado/meshes/0S0NG4owH0uBivEhLsmS3F.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0S0NG4owH0uBivEhLsmS3F" type="revolute">
+            <parent>pared_link</parent>
+            <child>0S0NG4owH0uBivEhLsmS3F_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+    </model>
+</sdf>

@@ -1,0 +1,87 @@
+<sdf version="1.6">
+  <model name="escenarioprueba">
+    <static>false</static>
+
+    <!-- 🔳 Pared con masa, sin gravedad -->
+    <link name="pared_link">
+      <pose>0 0 0 0 0 0</pose>
+      <gravity>false</gravity>
+      <self_collide>false</self_collide>
+      <visual name="pared_visual">
+        <geometry>
+          <mesh>
+            <uri>model://escenarioprueba/meshes/paredes.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="pared_collision">
+        <geometry>
+          <mesh>
+            <uri>model://escenarioprueba/meshes/paredes.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass>100.0</mass>
+        <inertia>
+          <ixx>10.0</ixx>
+          <iyy>10.0</iyy>
+          <izz>10.0</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
+      </inertial>
+    </link>
+
+    <!-- Puerta móvil -->
+    <link name="door_link">
+      <pose>4 2.0203 1.975 0 0 0</pose>
+      <visual name="door_visual">
+        <geometry>
+          <mesh>
+            <uri>model://escenarioprueba/meshes/puerta.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="door_collision">
+        <geometry>
+          <mesh>
+            <uri>model://escenarioprueba/meshes/puerta.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass>5.0</mass>
+        <inertia>
+          <ixx>0.5</ixx>
+          <iyy>0.5</iyy>
+          <izz>0.5</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
+      </inertial>
+    </link>
+
+    <!-- 🔗 Joint puerta-pared -->
+    <joint name="door_joint" type="revolute">
+      <parent>pared_link</parent>
+      <child>door_link</child>
+      <pose>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.57</upper>
+          <effort>10</effort>
+          <velocity>1.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.001</damping>
+          <friction>0.05</friction>
+        </dynamics>
+      </axis>
+    </joint>
+  </model>
+</sdf>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <world name="escenarioprueba">
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <include>
+            <uri>file://$(find bim2ros)/models/escenariopruebaAutomatizado_static/escenariopruebaAutomatizado_static.sdf</uri>
+        </include>
+        <include>
+            <uri>file://$(find bim2ros)/models/escenariopruebaAutomatizado_movable/escenariopruebaAutomatizado_movable.sdf</uri>
+        </include>
+    </world>
+</sdf>

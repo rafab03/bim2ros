@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="hospital">
+    <static>true</static>
+
+    <link name="hospital_link">
+
+      <!-- Visual-->
+      <visual name="hospital_visual">
+        <geometry>
+          <mesh>
+            <uri>model://hospital/meshes/hospital.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Collision -->
+      <collision name="hospital_collision">
+        <geometry>
+          <mesh>
+            <uri>model://hospital/meshes/hospital.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+
+    </link>
+
+  </model>
+</sdf>

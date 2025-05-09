@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_base_link"
+        args="0 0 0 0 0 0 map base_link"/>
+
+    <!-- Parámetros para ifc2world -->
+
+    <param name="map" value="escenarioconVentana.ifc"/>
+
+    <!-- Ruta al world generado -->
+    <arg name="world_file" default="$(find bim2ros)/worlds/escenarioconVentana.world"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name"   value="$(arg world_file)"/>
+        <arg name="paused"       value="false"/>
+        <arg name="use_sim_time" value="true"/>
+    </include>
+
+    <!-- Spawn del quadrotor -->
+    <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+        <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/>
+        <arg name="x"     value="12.8"/>
+        <arg name="y"     value="3.84"/>
+        <arg name="z"     value="2.22"/>
+    </include>
+
+        <!-- Visualización -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hector_quadrotor_demo)/rviz_cfg/outdoor_flight.rviz"/>
+
+    <arg name="scan_topic" default="/scan"/>
+    <node pkg="bim2ros" type="movable_objects.py" name="movable_objects" output="screen">
+        <param name="~scan_topic"  value="$(arg scan_topic)"/>
+    </node>
+
+</launch>

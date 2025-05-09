@@ -1,0 +1,266 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <model name="escenarioconVentana">
+        <static>false</static>
+        <link name="pared_link">
+            <pose>0 0 0 0 0 0</pose>
+            <gravity>false</gravity>
+            <self_collide>false</self_collide>
+            <visual name="pared_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/walls_slabs.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="pared_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/walls_slabs.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>1728000.6910</mass>
+                <inertia>
+                    <ixx>16704012.2418</ixx>
+                    <iyy>48960038.8737</iyy>
+                    <izz>61056049.2727</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <link name="puerta1_link">
+            <pose>3.99999976158142 2.02034997940063 1.97499990463257 0 0 0</pose>
+            <visual name="puerta1_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/0S0NG4owH0uBivEhLsmS3F.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="puerta1_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/0S0NG4owH0uBivEhLsmS3F.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>132.7387</mass>
+                <inertia>
+                    <ixx>45.5056</ixx>
+                    <iyy>55.3424</iyy>
+                    <izz>10.1293</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <joint name="rev_joint_puerta1" type="revolute">
+            <parent>pared_link</parent>
+            <child>puerta1_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>1.0129</damping>
+                    <friction>0.5065</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="ventana1_link">
+            <pose>2.44999980926514 1.90535044670105 2.00000023841858 0 0 0</pose>
+            <visual name="ventana1_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/06VSAmXC90pgMnrNrthNVu.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="ventana1_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/06VSAmXC90pgMnrNrthNVu.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>81.0000</mass>
+                <inertia>
+                    <ixx>5.5055</ixx>
+                    <iyy>7.8975</iyy>
+                    <izz>2.4680</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <joint name="prism_joint_ventana1" type="prismatic">
+            <parent>pared_link</parent>
+            <child>ventana1_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>1 0 0</xyz>
+                <limit>
+                    <lower>0.0</lower>
+                    <upper>1.0</upper>
+                    <effort>10</effort>
+                    <velocity>0.5</velocity>
+                </limit>
+                <dynamics>
+                    <damping>8.1000</damping>
+                    <friction>1.6200</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="puerta2_link">
+            <pose>12.0 2.02034997940063 2.0 0 0 0</pose>
+            <visual name="puerta2_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/0ESY8acebCD9KC_SRxdRoR.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="puerta2_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/0ESY8acebCD9KC_SRxdRoR.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>132.7387</mass>
+                <inertia>
+                    <ixx>45.5056</ixx>
+                    <iyy>55.3424</iyy>
+                    <izz>10.1293</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <joint name="rev_joint_puerta2" type="revolute">
+            <parent>pared_link</parent>
+            <child>puerta2_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>1.0129</damping>
+                    <friction>0.5065</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="puerta3_link">
+            <pose>12.0 6.0 2.0 0 0 0</pose>
+            <visual name="puerta3_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/3xuUtrQBT7shhrA3mjVmkT.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="puerta3_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/3xuUtrQBT7shhrA3mjVmkT.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>132.7388</mass>
+                <inertia>
+                    <ixx>45.5056</ixx>
+                    <iyy>55.3424</iyy>
+                    <izz>10.1294</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <joint name="rev_joint_puerta3" type="revolute">
+            <parent>pared_link</parent>
+            <child>puerta3_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>1.0129</damping>
+                    <friction>0.5065</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="ventana2_link">
+            <pose>4.32913398742676 5.72221183776855 2.22260975837708 0 0 0</pose>
+            <visual name="ventana2_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/3MdxIa0Db04wmuhqC_D3Bl.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="ventana2_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://escenarioconVentana/meshes/3MdxIa0Db04wmuhqC_D3Bl.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>81.0000</mass>
+                <inertia>
+                    <ixx>7.8975</ixx>
+                    <iyy>5.5055</iyy>
+                    <izz>2.4680</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <joint name="prism_joint_ventana2" type="prismatic">
+            <parent>pared_link</parent>
+            <child>ventana2_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <limit>
+                    <lower>0.0</lower>
+                    <upper>1.0</upper>
+                    <effort>10</effort>
+                    <velocity>0.5</velocity>
+                </limit>
+                <dynamics>
+                    <damping>8.1000</damping>
+                    <friction>1.6200</friction>
+                </dynamics>
+            </axis>
+        </joint>
+    </model>
+</sdf>

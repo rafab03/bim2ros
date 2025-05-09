@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <authoring_tool>IfcOpenShell 0.8.1-c49ca69</authoring_tool>
+    </contributor>
+    <created>2025-04-25T00:27:30</created>
+    <modified>2025-04-25T00:27:30</modified>
+    <unit name="METER" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="IfcMaterial-3732-fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert/>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="IfcMaterial-3732">
+      <instance_effect url="#IfcMaterial-3732-fx"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="representation-1059762-material-3732">
+      <mesh>
+        <source id="representation-1059762-material-3732-positions">
+          <float_array id="representation-1059762-material-3732-positions-array" count="72">-2.042632888942383 9.217317402271874 2.025654596524261 -2.042632888942383 9.267317402271874 2.025654596524261 -0.6676328889423823 9.267317402271874 2.786524161741652 -0.6676328889423823 9.217317402271874 2.786524161741652 -0.6676328889423823 9.217317402271874 2.786524161741652 -0.6676328889423823 9.267317402271874 2.786524161741652 -0.5643408630778041 9.267317402271874 2.386524161741652 -0.5643408630778041 9.217317402271874 2.386524161741652 -0.5643408630778041 9.217317402271874 2.386524161741652 -0.5643408630778041 9.267317402271874 2.386524161741652 -1.939340863077805 9.267317402271874 1.625654596524261 -1.939340863077805 9.217317402271874 1.625654596524261 -1.939340863077805 9.217317402271874 1.625654596524261 -1.939340863077805 9.267317402271874 1.625654596524261 -2.042632888942383 9.267317402271874 2.025654596524261 -2.042632888942383 9.217317402271874 2.025654596524261 -2.042632888942383 9.217317402271874 2.025654596524261 -0.6676328889423823 9.217317402271874 2.786524161741652 -0.5643408630778041 9.217317402271874 2.386524161741652 -1.939340863077805 9.217317402271874 1.625654596524261 -2.042632888942383 9.267317402271874 2.025654596524261 -0.6676328889423823 9.267317402271874 2.786524161741652 -0.5643408630778041 9.267317402271874 2.386524161741652 -1.939340863077805 9.267317402271874 1.625654596524261</float_array>
+          <technique_common>
+            <accessor source="#representation-1059762-material-3732-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="representation-1059762-material-3732-normals">
+          <float_array id="representation-1059762-material-3732-normals-array" count="72">-0.4841740634066229 0 0.8749717002991123 -0.4841740634066229 0 0.8749717002991123 -0.4841740634066229 0 0.8749717002991123 -0.4841740634066229 0 0.8749717002991123 0.9682385295729337 0 0.2500282980993212 0.9682385295729337 0 0.2500282980993212 0.9682385295729337 0 0.2500282980993212 0.9682385295729337 0 0.2500282980993212 0.4841740634066229 0 -0.8749717002991123 0.4841740634066229 0 -0.8749717002991123 0.4841740634066229 0 -0.8749717002991123 0.4841740634066229 0 -0.8749717002991123 -0.9682385295729337 0 -0.2500282980993212 -0.9682385295729337 0 -0.2500282980993212 -0.9682385295729337 0 -0.2500282980993212 -0.9682385295729337 0 -0.2500282980993212 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#representation-1059762-material-3732-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="representation-1059762-material-3732-vertices">
+          <input semantic="POSITION" source="#representation-1059762-material-3732-positions"/>
+        </vertices>
+        <triangles material="IfcMaterial-3732" count="12">
+          <input semantic="VERTEX" source="#representation-1059762-material-3732-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#representation-1059762-material-3732-normals" offset="1"/>
+          <p>1 1 0 0 3 3 2 2 1 1 3 3 5 5 4 4 7 7 6 6 5 5 7 7 9 9 8 8 11 11 10 10 9 9 11 11 13 13 12 12 15 15 14 14 13 13 15 15 17 17 16 16 18 18 16 16 19 19 18 18 22 22 20 20 21 21 22 22 23 23 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="IfcOpenShell">
+      <node id="project" name="project" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="product-a61f50d9-1b06-47d0-9196-83196ee53d41" name="product-a61f50d9-1b06-47d0-9196-83196ee53d41" type="NODE">
+          <matrix>1 0 0 -9.16521453857422 0 1 0 -1.61580014228821 0 0 1 -0.6543173789978029 0 0 0 1</matrix>
+          <node id="product-a61f50d9-1b06-47d0-9196-83196ee53d42" name="product-a61f50d9-1b06-47d0-9196-83196ee53d42" type="NODE">
+            <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <node id="product-79503529-d2a7-11d3-9162-0000863f14a2" name="product-79503529-d2a7-11d3-9162-0000863f14a2" type="NODE">
+              <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+              <node id="product-23f27b65-2a18-4efe-9dcd-efa1bad834ce-body" name="product-23f27b65-2a18-4efe-9dcd-efa1bad834ce-body" type="NODE">
+                <matrix>1 0 0 9.16521453857422 0 1 0 1.61580014228821 0 0 1 0.6543173789978029 0 0 0 1</matrix>
+                <instance_geometry url="#representation-1059762-material-3732">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="IfcMaterial-3732" target="#IfcMaterial-3732"/>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#IfcOpenShell"/>
+  </scene>
+</COLLADA>

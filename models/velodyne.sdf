@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="velodyne_sensor">
+    <static>true</static>
+    <link name="velodyne_link">
+      <pose>0 0 1 0 0 0</pose>
+      <!-- Aquí se define el sensor -->
+      <sensor name="velodyne_laser" type="gpu_ray">
+        <pose>0 0 0 0 0 0</pose>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14</min_angle>
+              <max_angle>3.14</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>100</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+        <plugin name="velodyne_plugin" filename="libvelodyne_plugin.so">
+          <topicName>/velodyne_points</topicName>
+          <!-- Aquí se pueden incluir otros parámetros específicos del Velodyne -->
+        </plugin>
+      </sensor>
+    </link>
+  </model>
+</sdf>

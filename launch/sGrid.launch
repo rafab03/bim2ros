@@ -1,14 +1,14 @@
 <launch>
     <!-- Pass parameters to the node -->
 
-    <param name="resolution" value="0.1"/>
-    <param name="world_sizeX" value="20"/>
-    <param name="world_sizeY" value="20"/>
-    <param name="world_sizeZ" value="4"/>
+    <param name="resolution" value="0.2"/>
+    <param name="world_sizeX" value="1"/>
+    <param name="world_sizeY" value="1"/>
+    <param name="world_sizeZ" value="2"/>
 
 
      <!-- add extension -->
-    <param name="map" value="casoplonv3.ifc"/>
+    <param name="map" value="escenarioprueba.ifc"/>
 
     <!-- Launch the Python script as a node -->
     <node name="sGridGeneration" pkg="bim2ros" type="sGridGeneration.py" output="screen"/>

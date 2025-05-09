@@ -1,0 +1,2381 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <model name="casa">
+        <static>false</static>
+        <link name="pared_link">
+            <pose>0 0 0 0 0 0</pose>
+            <gravity>false</gravity>
+            <self_collide>false</self_collide>
+            <visual name="pared_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/walls_slabs.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="pared_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/walls_slabs.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass>100.0</mass>
+                <inertia>
+                    <ixx>10.0</ixx>
+                    <iyy>10.0</iyy>
+                    <izz>10.0</izz>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyz>0.0</iyz>
+                </inertia>
+            </inertial>
+        </link>
+        <link name="3X414Lh312cfMiVfxwGS94_link">
+            <pose>10783.14781188961 7672.376632690433 654.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwGS94_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwGS94.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwGS94_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwGS94.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwGS94" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwGS94_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwGTdz_link">
+            <pose>11928.147315978975 7554.933547973636 4154.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwGTdz_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwGTdz.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwGTdz_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwGTdz.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwGTdz" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwGTdz_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3JE_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3JE_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JE.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3JE_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JE.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3JE" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3JE_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG6ps_link">
+            <pose>14568.147659301772 10058.933258056613 4154.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG6ps_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG6ps.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG6ps_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG6ps.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG6ps" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG6ps_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3IZ_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3IZ_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IZ.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3IZ_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IZ.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3IZ" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3IZ_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3IX_link">
+            <pose>9512.90798187256 9970.15190124512 3040.84157943725 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3IX_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IX.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3IX_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IX.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3IX" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3IX_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3IW_link">
+            <pose>8497.5814819336 10833.1184387207 3040.84157943725 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3IW_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IW.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3IW_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IW.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3IW" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3IW_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0_mn7CW$ahlhnkUKYh4eBt_link">
+            <pose>10783.147973219799 7672.3765801060745 654.317378997803 0 0 0</pose>
+            <visual name="0_mn7CW$ahlhnkUKYh4eBt_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0_mn7CW$ahlhnkUKYh4eBt.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0_mn7CW$ahlhnkUKYh4eBt_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0_mn7CW$ahlhnkUKYh4eBt.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0_mn7CW$ahlhnkUKYh4eBt" type="revolute">
+            <parent>pared_link</parent>
+            <child>0_mn7CW$ahlhnkUKYh4eBt_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0trUMme53xc8Nm93uDqac$_link">
+            <pose>10080.647888183592 9857.37648010254 4754.317378997803 0 0 0</pose>
+            <visual name="0trUMme53xc8Nm93uDqac$_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0trUMme53xc8Nm93uDqac$.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0trUMme53xc8Nm93uDqac$_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0trUMme53xc8Nm93uDqac$.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0trUMme53xc8Nm93uDqac$" type="revolute">
+            <parent>pared_link</parent>
+            <child>0trUMme53xc8Nm93uDqac$_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0YeXrLmqTN3pD7T2HA8u2G_link">
+            <pose>6100.786125826269 7648.376163403042 4154.317378997803 0 0 0</pose>
+            <visual name="0YeXrLmqTN3pD7T2HA8u2G_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0YeXrLmqTN3pD7T2HA8u2G.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0YeXrLmqTN3pD7T2HA8u2G_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0YeXrLmqTN3pD7T2HA8u2G.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0YeXrLmqTN3pD7T2HA8u2G" type="revolute">
+            <parent>pared_link</parent>
+            <child>0YeXrLmqTN3pD7T2HA8u2G_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3IY_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3IY_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IY.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3IY_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3IY.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3IY" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3IY_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2FU7NM7Vr3IBm9jCPWRFNO_link">
+            <pose>6122.6358413696325 8375.876426696776 1554.3174743652344 0 0 0</pose>
+            <visual name="2FU7NM7Vr3IBm9jCPWRFNO_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFNO.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2FU7NM7Vr3IBm9jCPWRFNO_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFNO.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2FU7NM7Vr3IBm9jCPWRFNO" type="revolute">
+            <parent>pared_link</parent>
+            <child>2FU7NM7Vr3IBm9jCPWRFNO_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3Lu$xo6H6tCcItc73_vOJI_link">
+            <pose>6300.786071014792 6922.376148303463 1554.317378997803 0 0 0</pose>
+            <visual name="3Lu$xo6H6tCcItc73_vOJI_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3Lu$xo6H6tCcItc73_vOJI.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3Lu$xo6H6tCcItc73_vOJI_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3Lu$xo6H6tCcItc73_vOJI.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3Lu$xo6H6tCcItc73_vOJI" type="revolute">
+            <parent>pared_link</parent>
+            <child>3Lu$xo6H6tCcItc73_vOJI_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3JD_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3JD_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JD.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3JD_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JD.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3JD" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3JD_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3JC_link">
+            <pose>6362.90836334229 10833.1184387207 2279.97207641601 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3JC_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JC.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3JC_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JC.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3JC" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3JC_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="19pWAbbwC9dlak5sGkQjBU_link">
+            <pose>14328.147645962228 3887.9761061826057 4554.317378997803 0 0 0</pose>
+            <visual name="19pWAbbwC9dlak5sGkQjBU_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/19pWAbbwC9dlak5sGkQjBU.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="19pWAbbwC9dlak5sGkQjBU_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/19pWAbbwC9dlak5sGkQjBU.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_19pWAbbwC9dlak5sGkQjBU" type="revolute">
+            <parent>pared_link</parent>
+            <child>19pWAbbwC9dlak5sGkQjBU_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3oWQrLSSI9iEspkhakd8rB_link">
+            <pose>15738.148173122592 2929.876386722053 4474.317378997803 0 0 0</pose>
+            <visual name="3oWQrLSSI9iEspkhakd8rB_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3oWQrLSSI9iEspkhakd8rB.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3oWQrLSSI9iEspkhakd8rB_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3oWQrLSSI9iEspkhakd8rB.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3oWQrLSSI9iEspkhakd8rB" type="revolute">
+            <parent>pared_link</parent>
+            <child>3oWQrLSSI9iEspkhakd8rB_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2N8jgTJrdjJ9yDXFVKSkgJ_link">
+            <pose>11448.1473922729 10057.37685402251 4754.317378997803 0 0 0</pose>
+            <visual name="2N8jgTJrdjJ9yDXFVKSkgJ_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2N8jgTJrdjJ9yDXFVKSkgJ.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2N8jgTJrdjJ9yDXFVKSkgJ_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2N8jgTJrdjJ9yDXFVKSkgJ.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2N8jgTJrdjJ9yDXFVKSkgJ" type="revolute">
+            <parent>pared_link</parent>
+            <child>2N8jgTJrdjJ9yDXFVKSkgJ_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3I$_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3I$_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3I$.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3I$_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3I$.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3I$" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3I$_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0opCWrxCMmcobjG25cOcXv_link">
+            <pose>10428.14813241931 3397.376678387199 4154.317378997803 0 0 0</pose>
+            <visual name="0opCWrxCMmcobjG25cOcXv_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0opCWrxCMmcobjG25cOcXv.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0opCWrxCMmcobjG25cOcXv_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0opCWrxCMmcobjG25cOcXv.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0opCWrxCMmcobjG25cOcXv" type="revolute">
+            <parent>pared_link</parent>
+            <child>0opCWrxCMmcobjG25cOcXv_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtR1R_link">
+            <pose>6100.785255432133 4172.376632690428 1713.028430938721 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtR1R_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtR1R.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtR1R_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtR1R.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtR1R" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtR1R_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3G5_link">
+            <pose>6412.90760040283 6443.11714172363 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3G5_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3G5.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3G5_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3G5.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3G5" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3G5_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtRyu_link">
+            <pose>15828.147888183601 5952.376365661625 1384.6631050109866 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtRyu_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtRyu.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtRyu_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtRyu.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtRyu" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtRyu_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2FU7NM7Vr3IBm9jCPWRFTY_link">
+            <pose>6100.785255432133 7648.376464843748 4154.317378997803 0 0 0</pose>
+            <visual name="2FU7NM7Vr3IBm9jCPWRFTY_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFTY.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2FU7NM7Vr3IBm9jCPWRFTY_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFTY.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2FU7NM7Vr3IBm9jCPWRFTY" type="revolute">
+            <parent>pared_link</parent>
+            <child>2FU7NM7Vr3IBm9jCPWRFTY_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0kBdLEOuMCL2qgqCnVeJJG_link">
+            <pose>6300.785676583557 1697.9761483034813 4654.317378997803 0 0 0</pose>
+            <visual name="0kBdLEOuMCL2qgqCnVeJJG_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0kBdLEOuMCL2qgqCnVeJJG.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0kBdLEOuMCL2qgqCnVeJJG_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0kBdLEOuMCL2qgqCnVeJJG.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0kBdLEOuMCL2qgqCnVeJJG" type="revolute">
+            <parent>pared_link</parent>
+            <child>0kBdLEOuMCL2qgqCnVeJJG_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3Jo_link">
+            <pose>7412.90760040283 9727.79083251953 2279.97207641601 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3Jo_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3Jo.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3Jo_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3Jo.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3Jo" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3Jo_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2qZ0qcXgPzJcfkU4ns78DQ_link">
+            <pose>6300.786188036539 8472.37614830346 5154.317378997803 0 0 0</pose>
+            <visual name="2qZ0qcXgPzJcfkU4ns78DQ_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2qZ0qcXgPzJcfkU4ns78DQ.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2qZ0qcXgPzJcfkU4ns78DQ_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2qZ0qcXgPzJcfkU4ns78DQ.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2qZ0qcXgPzJcfkU4ns78DQ" type="revolute">
+            <parent>pared_link</parent>
+            <child>2qZ0qcXgPzJcfkU4ns78DQ_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="1CF8dT82jQMdRWHzSzoh8t_link">
+            <pose>9165.21523419143 1615.8000120359775 654.317378997803 0 0 0</pose>
+            <visual name="1CF8dT82jQMdRWHzSzoh8t_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1CF8dT82jQMdRWHzSzoh8t.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="1CF8dT82jQMdRWHzSzoh8t_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1CF8dT82jQMdRWHzSzoh8t.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_1CF8dT82jQMdRWHzSzoh8t" type="revolute">
+            <parent>pared_link</parent>
+            <child>1CF8dT82jQMdRWHzSzoh8t_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG24h_link">
+            <pose>9447.148323059098 4312.376022338864 4154.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG24h_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG24h.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG24h_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG24h.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG24h" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG24h_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtQ1E_link">
+            <pose>10080.64746856689 9857.376098632814 4754.31728363037 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtQ1E_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ1E.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtQ1E_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ1E.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtQ1E" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtQ1E_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG2BB_link">
+            <pose>11448.147773742627 7754.933357238769 4154.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG2BB_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG2BB.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG2BB_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG2BB.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG2BB" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG2BB_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtQxu_link">
+            <pose>6300.786018371586 1697.9763507843004 4654.317378997803 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtQxu_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQxu.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtQxu_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQxu.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtQxu" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtQxu_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0x4rFHqafG3ipv7wIa9N2A_link">
+            <pose>9828.14788818359 9957.37648010254 4154.317378997803 0 0 0</pose>
+            <visual name="0x4rFHqafG3ipv7wIa9N2A_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0x4rFHqafG3ipv7wIa9N2A.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0x4rFHqafG3ipv7wIa9N2A_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0x4rFHqafG3ipv7wIa9N2A.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0x4rFHqafG3ipv7wIa9N2A" type="revolute">
+            <parent>pared_link</parent>
+            <child>0x4rFHqafG3ipv7wIa9N2A_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2FU7NM7Vr3IBm9jCPWRFOf_link">
+            <pose>5900.786399841316 6457.376480102536 654.317378997803 0 0 0</pose>
+            <visual name="2FU7NM7Vr3IBm9jCPWRFOf_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFOf.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2FU7NM7Vr3IBm9jCPWRFOf_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFOf.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2FU7NM7Vr3IBm9jCPWRFOf" type="revolute">
+            <parent>pared_link</parent>
+            <child>2FU7NM7Vr3IBm9jCPWRFOf_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="1dhO9WqzI1fwzc$lt8RCqo_link">
+            <pose>11928.147315979 7654.93392944336 4154.317378997803 0 0 0</pose>
+            <visual name="1dhO9WqzI1fwzc$lt8RCqo_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1dhO9WqzI1fwzc$lt8RCqo.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="1dhO9WqzI1fwzc$lt8RCqo_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1dhO9WqzI1fwzc$lt8RCqo.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_1dhO9WqzI1fwzc$lt8RCqo" type="revolute">
+            <parent>pared_link</parent>
+            <child>1dhO9WqzI1fwzc$lt8RCqo_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG2yz_link">
+            <pose>14328.147888183626 4037.376403808587 654.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG2yz_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG2yz.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG2yz_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG2yz.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG2yz" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG2yz_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtQ0j_link">
+            <pose>15738.147735595676 2929.8760890960693 4474.3170738220215 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtQ0j_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ0j.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtQ0j_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ0j.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtQ0j" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtQ0j_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3GA_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3GA_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3GA.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3GA_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3GA.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3GA" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3GA_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3GB_link">
+            <pose>9165.21453857422 1615.80014228821 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3GB_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3GB.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3GB_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3GB.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3GB" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3GB_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="1Utb1wR7$FoUgVB5uzF5kz_link">
+            <pose>15228.1475067139 5832.37648010254 654.317378997803 0 0 0</pose>
+            <visual name="1Utb1wR7$FoUgVB5uzF5kz_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1Utb1wR7$FoUgVB5uzF5kz.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="1Utb1wR7$FoUgVB5uzF5kz_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1Utb1wR7$FoUgVB5uzF5kz.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_1Utb1wR7$FoUgVB5uzF5kz" type="revolute">
+            <parent>pared_link</parent>
+            <child>1Utb1wR7$FoUgVB5uzF5kz_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="32XkwB6b3a7M3HKF7KiSsd_link">
+            <pose>13590.147116501825 3872.3762518709655 4154.317378997803 0 0 0</pose>
+            <visual name="32XkwB6b3a7M3HKF7KiSsd_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/32XkwB6b3a7M3HKF7KiSsd.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="32XkwB6b3a7M3HKF7KiSsd_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/32XkwB6b3a7M3HKF7KiSsd.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_32XkwB6b3a7M3HKF7KiSsd" type="revolute">
+            <parent>pared_link</parent>
+            <child>32XkwB6b3a7M3HKF7KiSsd_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="1hos7jB2fYw0nN4nmCKZQa_link">
+            <pose>11928.147819948346 7554.933840167325 4154.317378997803 0 0 0</pose>
+            <visual name="1hos7jB2fYw0nN4nmCKZQa_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1hos7jB2fYw0nN4nmCKZQa.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="1hos7jB2fYw0nN4nmCKZQa_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1hos7jB2fYw0nN4nmCKZQa.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_1hos7jB2fYw0nN4nmCKZQa" type="revolute">
+            <parent>pared_link</parent>
+            <child>1hos7jB2fYw0nN4nmCKZQa_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwH_bi_link">
+            <pose>13028.147697448714 3752.3763179779075 654.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwH_bi_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwH_bi.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwH_bi_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwH_bi.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwH_bi" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwH_bi_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2jDf5z0IUNguvW$4sahgUd_link">
+            <pose>4700.78563690186 972.376108169556 3754.317283630371 0 0 0</pose>
+            <visual name="2jDf5z0IUNguvW$4sahgUd_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2jDf5z0IUNguvW$4sahgUd.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2jDf5z0IUNguvW$4sahgUd_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2jDf5z0IUNguvW$4sahgUd.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2jDf5z0IUNguvW$4sahgUd" type="revolute">
+            <parent>pared_link</parent>
+            <child>2jDf5z0IUNguvW$4sahgUd_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0G8iBTkv2qAR6U7dZi_e58_link">
+            <pose>6300.785712399761 2172.376148303477 1713.02838674529 0 0 0</pose>
+            <visual name="0G8iBTkv2qAR6U7dZi_e58_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0G8iBTkv2qAR6U7dZi_e58.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0G8iBTkv2qAR6U7dZi_e58_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0G8iBTkv2qAR6U7dZi_e58.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0G8iBTkv2qAR6U7dZi_e58" type="revolute">
+            <parent>pared_link</parent>
+            <child>0G8iBTkv2qAR6U7dZi_e58_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0B7b8cb5Hdt0pPKkKnmA40_link">
+            <pose>9165.214852721736 1615.7997930920733 1454.317378997803 0 0 0</pose>
+            <visual name="0B7b8cb5Hdt0pPKkKnmA40_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0B7b8cb5Hdt0pPKkKnmA40.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0B7b8cb5Hdt0pPKkKnmA40_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0B7b8cb5Hdt0pPKkKnmA40.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0B7b8cb5Hdt0pPKkKnmA40" type="revolute">
+            <parent>pared_link</parent>
+            <child>0B7b8cb5Hdt0pPKkKnmA40_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtQ$n_link">
+            <pose>15228.14750671387 7189.8765563964835 4454.317569732666 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtQ$n_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ$n.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtQ$n_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ$n.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtQ$n" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtQ$n_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2FU7NM7Vr3IBm9jCPWRFUY_link">
+            <pose>6300.786018371587 8472.375869750977 5154.317378997803 0 0 0</pose>
+            <visual name="2FU7NM7Vr3IBm9jCPWRFUY_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFUY.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2FU7NM7Vr3IBm9jCPWRFUY_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2FU7NM7Vr3IBm9jCPWRFUY.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2FU7NM7Vr3IBm9jCPWRFUY" type="revolute">
+            <parent>pared_link</parent>
+            <child>2FU7NM7Vr3IBm9jCPWRFUY_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3tq0o0OgNeGxHXpa7EgvWz_link">
+            <pose>14568.148124834113 10058.93359618591 4154.317378997803 0 0 0</pose>
+            <visual name="3tq0o0OgNeGxHXpa7EgvWz_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3tq0o0OgNeGxHXpa7EgvWz.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3tq0o0OgNeGxHXpa7EgvWz_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3tq0o0OgNeGxHXpa7EgvWz.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3tq0o0OgNeGxHXpa7EgvWz" type="revolute">
+            <parent>pared_link</parent>
+            <child>3tq0o0OgNeGxHXpa7EgvWz_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtQux_link">
+            <pose>6300.786018371587 5274.876594543456 4554.317474365234 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtQux_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQux.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtQux_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQux.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtQux" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtQux_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="26R4GGj8v8EAchpBZVtQ_e_link">
+            <pose>11448.147773742628 10057.376861572302 4754.31728363037 0 0 0</pose>
+            <visual name="26R4GGj8v8EAchpBZVtQ_e_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ_e.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="26R4GGj8v8EAchpBZVtQ_e_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/26R4GGj8v8EAchpBZVtQ_e.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_26R4GGj8v8EAchpBZVtQ_e" type="revolute">
+            <parent>pared_link</parent>
+            <child>26R4GGj8v8EAchpBZVtQ_e_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG7jY_link">
+            <pose>14328.147888183626 3887.9764080047585 4554.317474365234 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG7jY_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG7jY.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG7jY_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG7jY.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG7jY" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG7jY_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="1L0XOZF$2plsA2zn5ILXUL_link">
+            <pose>10328.1478881836 6632.3766708374 4154.317378997803 0 0 0</pose>
+            <visual name="1L0XOZF$2plsA2zn5ILXUL_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1L0XOZF$2plsA2zn5ILXUL.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="1L0XOZF$2plsA2zn5ILXUL_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1L0XOZF$2plsA2zn5ILXUL.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_1L0XOZF$2plsA2zn5ILXUL" type="revolute">
+            <parent>pared_link</parent>
+            <child>1L0XOZF$2plsA2zn5ILXUL_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0z5x4pFABubaY5uElUM8wU_link">
+            <pose>9165.2144530765 1615.7998339027856 654.317378997803 0 0 0</pose>
+            <visual name="0z5x4pFABubaY5uElUM8wU_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0z5x4pFABubaY5uElUM8wU.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0z5x4pFABubaY5uElUM8wU_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0z5x4pFABubaY5uElUM8wU.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0z5x4pFABubaY5uElUM8wU" type="revolute">
+            <parent>pared_link</parent>
+            <child>0z5x4pFABubaY5uElUM8wU_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0w1adDCDe3M0PC5U7uY6$z_link">
+            <pose>11448.147551002936 7754.9330772279045 4154.317378997803 0 0 0</pose>
+            <visual name="0w1adDCDe3M0PC5U7uY6$z_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0w1adDCDe3M0PC5U7uY6$z.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0w1adDCDe3M0PC5U7uY6$z_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0w1adDCDe3M0PC5U7uY6$z.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0w1adDCDe3M0PC5U7uY6$z" type="revolute">
+            <parent>pared_link</parent>
+            <child>0w1adDCDe3M0PC5U7uY6$z_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3RJvdtay16xQ_ZgYEsHJx9_link">
+            <pose>13590.147018432577 3872.376203536988 4154.317378997803 0 0 0</pose>
+            <visual name="3RJvdtay16xQ_ZgYEsHJx9_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3RJvdtay16xQ_ZgYEsHJx9.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3RJvdtay16xQ_ZgYEsHJx9_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3RJvdtay16xQ_ZgYEsHJx9.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3RJvdtay16xQ_ZgYEsHJx9" type="revolute">
+            <parent>pared_link</parent>
+            <child>3RJvdtay16xQ_ZgYEsHJx9_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3mNy1A9VihwKuspfSaSmSs_link">
+            <pose>9165.215154713322 1615.8000692596142 1454.317378997803 0 0 0</pose>
+            <visual name="3mNy1A9VihwKuspfSaSmSs_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3mNy1A9VihwKuspfSaSmSs.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3mNy1A9VihwKuspfSaSmSs_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3mNy1A9VihwKuspfSaSmSs.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3mNy1A9VihwKuspfSaSmSs" type="revolute">
+            <parent>pared_link</parent>
+            <child>3mNy1A9VihwKuspfSaSmSs_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="182Cya4zeR7TpV2MKOKJ6Q_link">
+            <pose>15228.147932278674 7189.876432049477 4454.317378997803 0 0 0</pose>
+            <visual name="182Cya4zeR7TpV2MKOKJ6Q_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/182Cya4zeR7TpV2MKOKJ6Q.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="182Cya4zeR7TpV2MKOKJ6Q_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/182Cya4zeR7TpV2MKOKJ6Q.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_182Cya4zeR7TpV2MKOKJ6Q" type="revolute">
+            <parent>pared_link</parent>
+            <child>182Cya4zeR7TpV2MKOKJ6Q_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="2Q2eU2TdLOO63FLXtFcYGe_link">
+            <pose>10683.1483840942 7672.37663269043 654.317378997803 0 0 0</pose>
+            <visual name="2Q2eU2TdLOO63FLXtFcYGe_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2Q2eU2TdLOO63FLXtFcYGe.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="2Q2eU2TdLOO63FLXtFcYGe_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/2Q2eU2TdLOO63FLXtFcYGe.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_2Q2eU2TdLOO63FLXtFcYGe" type="revolute">
+            <parent>pared_link</parent>
+            <child>2Q2eU2TdLOO63FLXtFcYGe_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG26R_link">
+            <pose>10428.14731597901 3397.3762989044167 4154.317378997803 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG26R_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG26R.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG26R_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG26R.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG26R" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG26R_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="18rQOBs86vdKwAL24AiR0p_link">
+            <pose>9165.214626777717 1615.7996182496845 654.317378997803 0 0 0</pose>
+            <visual name="18rQOBs86vdKwAL24AiR0p_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/18rQOBs86vdKwAL24AiR0p.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="18rQOBs86vdKwAL24AiR0p_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/18rQOBs86vdKwAL24AiR0p.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_18rQOBs86vdKwAL24AiR0p" type="revolute">
+            <parent>pared_link</parent>
+            <child>18rQOBs86vdKwAL24AiR0p_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3X414Lh312cfMiVfxwG4Gb_link">
+            <pose>16328.147888183605 3322.3760128021195 1384.6631050109866 0 0 0</pose>
+            <visual name="3X414Lh312cfMiVfxwG4Gb_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG4Gb.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3X414Lh312cfMiVfxwG4Gb_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3X414Lh312cfMiVfxwG4Gb.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3X414Lh312cfMiVfxwG4Gb" type="revolute">
+            <parent>pared_link</parent>
+            <child>3X414Lh312cfMiVfxwG4Gb_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3Jp_link">
+            <pose>6362.90836334229 9727.79083251953 2279.97207641601 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3Jp_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3Jp.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3Jp_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3Jp.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3Jp" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3Jp_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="1oEHNbBOZesyu2CZcTXKBs_link">
+            <pose>6300.785946632 5274.876148303472 4554.317378997803 0 0 0</pose>
+            <visual name="1oEHNbBOZesyu2CZcTXKBs_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1oEHNbBOZesyu2CZcTXKBs.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="1oEHNbBOZesyu2CZcTXKBs_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/1oEHNbBOZesyu2CZcTXKBs.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_1oEHNbBOZesyu2CZcTXKBs" type="revolute">
+            <parent>pared_link</parent>
+            <child>1oEHNbBOZesyu2CZcTXKBs_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0HIKLxwkUNcnROQims_5Tr_link">
+            <pose>9165.214697454547 1615.800200762088 654.317378997803 0 0 0</pose>
+            <visual name="0HIKLxwkUNcnROQims_5Tr_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0HIKLxwkUNcnROQims_5Tr.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0HIKLxwkUNcnROQims_5Tr_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0HIKLxwkUNcnROQims_5Tr.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0HIKLxwkUNcnROQims_5Tr" type="revolute">
+            <parent>pared_link</parent>
+            <child>0HIKLxwkUNcnROQims_5Tr_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="0ZydjbAXXE$ftDxw6ws3JA_link">
+            <pose>7412.90760040283 9833.11843872071 654.317378997803 0 0 0</pose>
+            <visual name="0ZydjbAXXE$ftDxw6ws3JA_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JA.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="0ZydjbAXXE$ftDxw6ws3JA_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/0ZydjbAXXE$ftDxw6ws3JA.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_0ZydjbAXXE$ftDxw6ws3JA" type="revolute">
+            <parent>pared_link</parent>
+            <child>0ZydjbAXXE$ftDxw6ws3JA_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <link name="3ne0YqQa5LdAUphTsV9sXE_link">
+            <pose>9447.148469130481 4312.376335531402 4154.317378997803 0 0 0</pose>
+            <visual name="3ne0YqQa5LdAUphTsV9sXE_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3ne0YqQa5LdAUphTsV9sXE.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="3ne0YqQa5LdAUphTsV9sXE_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://casa/meshes/3ne0YqQa5LdAUphTsV9sXE.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="joint_3ne0YqQa5LdAUphTsV9sXE" type="revolute">
+            <parent>pared_link</parent>
+            <child>3ne0YqQa5LdAUphTsV9sXE_link</child>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-1.57</lower>
+                    <upper>1.57</upper>
+                    <effort>10</effort>
+                    <velocity>1.0</velocity>
+                </limit>
+                <dynamics>
+                    <damping>0.001</damping>
+                    <friction>0.05</friction>
+                </dynamics>
+            </axis>
+        </joint>
+    </model>
+</sdf>

@@ -162,14 +162,11 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
-  scripts/navigation/load_gridm.py
-  scripts/detection/sGridGeneration.py
-  scripts/detection/bim2ros.py
-  scripts/detection/pathfollower.py
-  scripts/navigation/TSP.py
-  scripts/navigation/MST.py
-  scripts/navigation/voro.py
-  scripts/navigation/kdtree_cluster.py
+
+  scripts/detection/movable_objects.py
+  scripts/detection/graficasMovablesObjects.py
+  scripts/detection/newifc2world.py
+  scripts/detection/controlador.py
   
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

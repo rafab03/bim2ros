@@ -1,0 +1,14 @@
+<launch>
+    <!-- Declaramos los argumentos necesarios -->
+    <arg name="world_file" default="$(find bim2ros)/worlds/escenarioconVentana.world" />
+    
+    <!-- Parámetros para ifc2world -->
+
+    <param name="map" value="escenarioconVentana.ifc"/>
+
+    <!-- Lanzar el nodo ifc2world que genera los archivos -->
+    <node name="ifc2world" pkg="bim2ros" type="newifc2world.py" output="screen" />
+
+    
+
+</launch>

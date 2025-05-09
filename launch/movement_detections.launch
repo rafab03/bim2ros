@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Índice del rayo LaserScan que mira a la puerta -->
+  <arg name="door_index"    default="1000"        /> <!-- ajústalo según tu configuración -->
+  <!-- Nombre del topic donde recibes los datos de LaserScan -->
+  <arg name="scan_topic"    default="/scan"       />
+
+  <!-- Nodo que escucha el LaserScan y publica el ángulo de la puerta -->
+  <node pkg="bim2ros"
+        type="movable_objects.py"
+        name="movable_objects"
+        output="screen">
+    <!-- Remapeo del topic de LaserScan -->
+    <remap from="scan" to="$(arg scan_topic)" />
+
+    <!-- Parámetros -->
+    <param name="door_index" value="$(arg door_index)" />
+    <!-- Si quieres puedes exponer aquí más parámetros, p. ej. umbrales, frame_id, etc. -->
+  </node>
+</launch>
