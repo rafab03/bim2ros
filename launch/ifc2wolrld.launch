@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="ifc2world" pkg="bim2ros" type="ifc2world.py" output="screen" />
+
+    
+
+</launch>

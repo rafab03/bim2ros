@@ -1,0 +1,13 @@
+map: escenario_validacion.ifc
+
+resolution: 0.05
+world_sizeX: 12.0
+world_sizeY: 12.0
+world_sizeZ: 5.0
+
+altura_fija: 2.8
+
+robot_spawn:
+  x: 4.5
+  y: 5.0
+  z: 2.0

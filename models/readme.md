@@ -1,0 +1,1 @@
+Esta carpeta, además de contener los modelos IFC sobre los que se pretende trabajar, también contendrá la estructura necesaria para cargar el escenario en Gazebo. Estos archivos se generarán automáticamente una vez ejecutado el nodo ifc2world.py.

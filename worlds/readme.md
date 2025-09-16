@@ -1,0 +1,1 @@
+En esta carpeta se generarán automáticamente los archivos .world de cada escenario al ejecutar el nodo ifc2world.py.

@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="bim2map" pkg="bim2ros" type="bim2map.py" output="screen" />
+
+    
+</launch> 

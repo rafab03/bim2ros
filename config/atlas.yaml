@@ -1,0 +1,13 @@
+map: atlas.ifc
+
+resolution: 0.05
+world_sizeX: 80.0
+world_sizeY: 30.0
+world_sizeZ: 10.0
+
+altura_fija: 0.4
+
+robot_spawn:
+  x: 16.0
+  y: 15.0
+  z: 0.2
